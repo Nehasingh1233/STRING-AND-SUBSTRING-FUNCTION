@@ -1,0 +1,38 @@
+
+SELECT *FROM dlithe.dbo.S_HREMPLOYEES
+
+
+select top 5* from  dlithe.dbo.S_HREMPLOYEES
+
+
+
+select upper(LAST_NAME) as lname,lower(FIRST_NAME)
+from dlithe.dbo.S_HREMPLOYEES
+
+select len(EMPLOYEE_ID)
+from dlithe.dbo.S_HREMPLOYEES
+
+select LTRIM(RTRIM (EMPLOYEE_ID))
+from dlithe.dbo.S_HREMPLOYEES
+
+select REPLACE('stevensingh','singh','@')
+from dlithe.dbo.S_HREMPLOYEES
+
+select concat(FIRST_NAME,LAST_NAME) AS FIRST_NAME
+FROM dlithe.dbo.S_HREMPLOYEES
+
+select case when department_id=60 THEN 'IT'
+when department_id=70 THEN 'loan'
+when department_id=80 THEN 'FINANCE'
+when department_id=90 THEN 'tainer'
+else 'OTHERS'
+END AS dname,department_id
+from dlithe.dbo.S_HREMPLOYEES
+
+
+select substring('david king',1,10)as first_name
+from dlithe.dbo.S_HREMPLOYEES
+
+select charindex('d','david')as sa
+         from dlithe.dbo.S_HREMPLOYEES
+         
